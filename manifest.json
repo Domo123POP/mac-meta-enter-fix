@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Mac Meta Enter Fix",
+  "version": "1.0.0",
+  "description": "修復 Mac 內建輸入法在 Meta 旗下網頁 (FB, IG, Threads 等) 選字時按 Enter 會直接送出訊息的問題。",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.messenger.com/*",
+        "*://*.threads.net/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
