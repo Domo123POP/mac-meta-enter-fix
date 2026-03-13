@@ -1,3 +1,18 @@
+// ==UserScript==
+// @name         Mac Safari IME Enter Fix
+// @namespace    http://tampermonkey.net/
+// @version      1.1
+// @description  修復 Mac Safari 內建輸入法在 Meta 網頁與 X (Twitter) 選字時按 Enter 會直接送出訊息的 Bug
+// @match        *://*.facebook.com/*
+// @match        *://*.instagram.com/*
+// @match        *://*.messenger.com/*
+// @match        *://*.threads.net/*
+// @match        *://*.twitter.com/*
+// @match        *://*.x.com/*
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
+
 (function() {
     'use strict';
 
